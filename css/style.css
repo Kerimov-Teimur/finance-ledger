@@ -1,0 +1,281 @@
+:root {
+  --accent-color: #28a745;
+  --primary-text-color: #333333;
+  --secondary-text-color: #ffffff;
+}
+
+/* reset */
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+/* Класс для обнуления базовых свойств у списков (ul) */
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+/* Класс для обнуления базовых свойств у ссылок */
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+/* Свойства для корректного отображения картинок */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Свойства для обнуления курсива у address */
+
+address {
+  font-style: normal;
+}
+
+/* utils */
+.container {
+  width: 1360px;
+  margin: 0 auto;
+  padding: 0 28px;
+
+  outline: 2px solid red;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ========================================= */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--primary-text-color);
+  font-size: 18px;
+  background-color: var(--secondary-text-color);
+}
+
+.section {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+/* =====Header===== */
+.header {
+  background-color: rgb(70, 75, 73);
+}
+
+.header .container {
+  padding: 0 50px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+.logo {
+  font-size: 35px;
+  line-height: 1.21;
+  color: var(--secondary-text-color);
+
+  margin-right: auto;
+}
+
+.header-link {
+  line-height: 1.56;
+  padding: 21px 0;
+  color: var(--secondary-text-color);
+
+  display: block;
+}
+
+/* =====HERO===== */
+.hero {
+  background-color: rgb(70, 75, 73);
+
+  padding: 259px 0 284px 0;
+  text-align: center;
+  border-radius: 0px;
+}
+
+.hero-title {
+  font-weight: 300;
+  font-size: 55px;
+  line-height: 1.2;
+
+  color: #e9e9e9;
+
+  margin-bottom: 45px;
+}
+
+.hero-text {
+  font-size: 22px;
+  line-height: 1.67;
+  color: #e9e9e9;
+
+  margin-bottom: 29px;
+}
+
+.hero-btn {
+  line-height: 1.56;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  cursor: pointer;
+
+  border: 0;
+  border-radius: 5px;
+
+  display: inline-block;
+  padding: 10px 30px 9px 41px;
+}
+
+/* =====about===== */
+
+.about {
+  padding-top: 122px;
+  padding-bottom: 19px;
+}
+
+.about .container {
+  padding: 0 66px 0 66px;
+}
+
+.about-list {
+  display: flex;
+  gap: 71px;
+}
+
+.about-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.65;
+  text-align: center;
+
+  margin-bottom: 16px;
+}
+
+.about-text {
+  line-height: 1.56;
+  text-align: center;
+
+  width: 362px;
+}
+
+/* =====Solution===== */
+
+.solution .container {
+  display: flex;
+}
+
+.solution-content {
+  padding: 0 44px 0 30px;
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+}
+
+.solution-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.65;
+
+  margin-bottom: 5px;
+  padding-top: 84px;
+}
+
+.solution-subtitle {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+
+  margin-bottom: 26px;
+}
+
+.solution-text {
+  line-height: 1.56;
+
+  margin-bottom: 28px;
+}
+
+.solution-btn {
+  line-height: 1.56;
+  border: 1px solid var(--secondary-text-color);
+  border-radius: 5px;
+
+  color: var(--secondary-text-color);
+  background-color: transparent;
+  display: inline-block;
+
+  padding: 11px 27px 12px 42px;
+}
+
+/* =====CASE===== */
+
+.case .container {
+  text-align: center;
+}
+
+.case-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.65;
+
+  padding-top: 50px;
+  margin-bottom: 15px;
+}
+
+.case-subtitle {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+
+  margin-bottom: 34px;
+}
+
+.case-text {
+  line-height: 1.56;
+
+  margin-bottom: 39px;
+}
+
+.case-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.case-item {
+  width: calc((100% - 24px) / 4);
+}
