@@ -218,16 +218,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* padding-top: 40px; */
 }
 
 .abot-item {
   width: calc((100% - 2 * 71px) / 3);
 }
 
-/* .about-icon {
-} */
+.about-icon {
+  fill: var(--secondary-text-color);
+}
 
 /* =====Solution===== */
 
@@ -464,4 +463,8 @@ body {
   padding-left: auto;
   padding-right: auto;
   margin-bottom: 10px;
+}
+
+.footer-icon {
+  fill: var(--secondary-text-color);
 }
