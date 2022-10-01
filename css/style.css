@@ -137,7 +137,10 @@ body {
 
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -169,6 +172,14 @@ body {
 
   display: inline-block;
   padding: 10px 30px 9px 41px;
+}
+
+.hero-btn-link {
+  margin-right: 5.87px;
+}
+
+.hero-btn-icon {
+  fill: var(--secondary-text-color);
 }
 
 /* =====about===== */
