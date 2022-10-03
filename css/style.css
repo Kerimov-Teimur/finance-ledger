@@ -187,7 +187,6 @@ body {
 .about {
   padding-top: 40px;
   padding-bottom: 19px;
-  background-color: burlywood;
 }
 
 .about .container {
@@ -422,6 +421,31 @@ body {
   align-items: center;
   justify-content: center;
   gap: 19px;
+  margin-top: 45px;
+}
+
+.team-thumb {
+  position: relative;
+}
+
+.team-soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.team-soc-item {
+  height: 35px;
+}
+
+.team-soc-icon {
+  fill: var(--secondary-text-color);
 }
 
 /* =====Request===== */
