@@ -48,11 +48,14 @@ address {
 
 /* utils */
 .container {
-  width: 1360px;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 0 28px;
+}
 
-  /* outline: 2px solid red; */
+.section {
+  max-width: 1360px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -79,7 +82,9 @@ body {
 
 /* =====Header===== */
 .header {
-  background-color: rgb(70, 75, 73);
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 
 .header .container {
@@ -116,8 +121,14 @@ body {
   line-height: 1.56;
   padding: 21px 0;
   color: var(--secondary-text-color);
-
   display: block;
+
+  transition: color 250ms linear;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
 }
 
 .header-icon {
@@ -187,6 +198,10 @@ body {
 .about {
   padding-top: 40px;
   padding-bottom: 19px;
+
+  background-color: #f4f4f4;
+  max-width: 1360px;
+  margin: 0 auto;
 }
 
 .about .container {
@@ -212,7 +227,15 @@ body {
   text-align: center;
 }
 
-.about-link {
+/* .about-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+} */
+
+.about-content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -221,13 +244,7 @@ body {
   height: 67px;
   background-color: var(--accent-color);
   border-radius: 50%;
-  margin-bottom: 15px;
-}
-
-.about-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 15px auto;
 }
 
 .abot-item {
@@ -242,66 +259,61 @@ body {
 
 .solution .container {
   display: flex;
+  padding: 0;
 }
 
 .solution-content {
-  padding: 0 44px 0 30px;
+  padding: 84px 44px 84px 30px;
   background-color: var(--accent-color);
-  color: var(--secondary-text-color);
+  width: 50%;
 }
 
 .solution-title {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.65;
-
+  color: var(--secondary-text-color);
   margin-bottom: 5px;
-  padding-top: 84px;
 }
 
 .solution-subtitle {
   font-weight: 300;
   font-size: 38px;
   line-height: 1.26;
-
+  color: var(--secondary-text-color);
   margin-bottom: 26px;
 }
 
 .solution-text {
   line-height: 1.56;
-
+  color: var(--secondary-text-color);
   margin-bottom: 17px;
 }
 
 .solution-btn {
   line-height: 1.56;
-
-  border: 1px solid var(--secondary-text-color);
+  text-align: center;
   color: var(--secondary-text-color);
-  background-color: transparent;
   border-radius: 5px;
-
+  border: 1px solid var(--secondary-text-color);
   display: inline-block;
-
+  background-color: transparent;
+  cursor: pointer;
   padding: 11px 27px 12px 42px;
 }
 
 /* =====CASE===== */
 
 .case {
-  padding-bottom: 48px;
-}
-
-.case .container {
-  text-align: center;
+  padding: 50px 0;
 }
 
 .case-title {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.65;
-
-  padding-top: 50px;
+  text-align: center;
+  color: var(--primary-text-color);
   margin-bottom: 15px;
 }
 
@@ -309,20 +321,23 @@ body {
   font-weight: 300;
   font-size: 38px;
   line-height: 1.26;
-
+  text-align: center;
+  color: var(--primary-text-color);
   margin-bottom: 34px;
 }
 
 .case-text {
   line-height: 1.56;
-
+  text-align: center;
+  color: var(--primary-text-color);
   margin-bottom: 39px;
 }
 
 .case-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  row-gap: 7px;
+  column-gap: 8px;
 }
 
 .case-item {
@@ -333,45 +348,24 @@ body {
 
 .blog .container {
   display: flex;
+  padding: 0;
 }
 
 .blog-content {
   background-color: #0284d0;
-  color: var(--secondary-text-color);
-
+  width: 50%;
   padding: 112px 44px 113px 30px;
-}
-
-.blog-title {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.65;
-
-  margin-bottom: 5px;
-}
-
-.blog-subtitle {
-  font-weight: 300;
-  font-size: 38px;
-  line-height: 1.26;
-  margin-bottom: 26px;
-}
-
-.blog-text {
-  line-height: 1.56;
-  margin-bottom: 17px;
 }
 
 .blog-btn {
   line-height: 1.56;
-
-  border: 1px solid var(--secondary-text-color);
+  text-align: center;
   color: var(--secondary-text-color);
-  background-color: transparent;
   border-radius: 5px;
-
+  border: 1px solid var(--secondary-text-color);
   display: inline-block;
-
+  background-color: transparent;
+  cursor: pointer;
   padding: 11px 31px 10px 42px;
 }
 
@@ -379,6 +373,11 @@ body {
 
 .team {
   padding: 49px 0 59px 0;
+
+  background-color: #e5e5e5;
+
+  max-width: 1360px;
+  margin: 0 auto;
 }
 
 .team-title {
