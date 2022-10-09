@@ -72,6 +72,26 @@ address {
   overflow: hidden;
 }
 
+/* BUTTON */
+.button {
+  line-height: 1.56;
+  text-align: center;
+  color: var(--secondary-text-color);
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+}
+
+.dark {
+  background-color: var(--accent-color);
+}
+
+.ligth {
+  background-color: transparent;
+  border: 1px solid var(--secondary-text-color);
+}
+
 /* ========================================= */
 body {
   font-family: "Open Sans", sans-serif;
@@ -173,15 +193,6 @@ body {
 }
 
 .hero-btn {
-  line-height: 1.56;
-  color: #ffffff;
-  background-color: var(--accent-color);
-  cursor: pointer;
-
-  border: 0;
-  border-radius: 5px;
-
-  display: inline-block;
   padding: 10px 30px 9px 41px;
 }
 
@@ -226,14 +237,6 @@ body {
   line-height: 1.56;
   text-align: center;
 }
-
-/* .about-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  
-} */
 
 .about-content {
   display: flex;
@@ -291,14 +294,6 @@ body {
 }
 
 .solution-btn {
-  line-height: 1.56;
-  text-align: center;
-  color: var(--secondary-text-color);
-  border-radius: 5px;
-  border: 1px solid var(--secondary-text-color);
-  display: inline-block;
-  background-color: transparent;
-  cursor: pointer;
   padding: 11px 27px 12px 42px;
 }
 
@@ -358,14 +353,6 @@ body {
 }
 
 .blog-btn {
-  line-height: 1.56;
-  text-align: center;
-  color: var(--secondary-text-color);
-  border-radius: 5px;
-  border: 1px solid var(--secondary-text-color);
-  display: inline-block;
-  background-color: transparent;
-  cursor: pointer;
   padding: 11px 31px 10px 42px;
 }
 
@@ -464,13 +451,13 @@ body {
 }
 
 .request-btn {
-  line-height: 1.38;
+  /* line-height: 1.38;
   text-align: center;
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
   border-radius: 5px;
   display: inline-block;
-  border: 0;
+  border: 0; */
 
   padding: 7px 277px 10px 291px;
 }
