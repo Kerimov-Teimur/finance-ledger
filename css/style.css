@@ -374,7 +374,7 @@ body {
 .team {
   padding: 49px 0 59px 0;
 
-  background-color: #e5e5e5;
+  background-color: var(--secondary-text-color);
 
   max-width: 1360px;
   margin: 0 auto;
